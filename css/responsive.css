@@ -11,125 +11,53 @@
 
 @media (max-width: 739px) {
   
-    .homeinfo-item
-    {
-        display: block;
-    }
-    .homeinfo-item-img
-    {
+    .show-video iframe {
         width: 100%;
-        border-bottom: 1px solid #FFF;
-     
+        height: 300px;
+        position: relative;
     }
-    .homeinfo-wrapper .grid{
-        padding: 0px;
+    .homeproduct-list 
+    {
+        font-size: 18px;
     }
-    .homeinfo-intro{
+    .homeproduct-item .img-bg
+    {
+        min-height: 300px;
+    }
+    .homeservice-item:nth-child(1) {
+      
+        margin-top: -20px;
+    }
+    .homeservice-item:nth-child(3) {
+        order: 1;
+        margin-top: 150px;
+    }
+    .homeservice-item--name {
+        color: #FFF;
+        max-width: 100%;
+    }
+    .show-video
+    {
+        height: auto;
+    }
+    .menuboxfooter
+    {
+        flex-wrap: wrap;
+    }
+    .menuboxfooter li{
+        width: 50%;
+    }
+    .footer-main .logo img{
+        margin: auto!important;
+    }   
+    .homeservice-item  .homeservice-item--name
+    {
         display: none;
     }
-    .homeinfo-item-name
+    .homeservice-item:nth-child(2) .homeservice-item--name
     {
-        float: left;
-        line-height: 60px;
+        display: -webkit-box;
     }
-    .homeinfo-item-img::before
-    {
-       opacity: 0;
-    }
-    .homeinfo-item-img img{
-        max-width: 60px;
-        float: left;
-        height: 60px;
-    }
-    .item-top, .item-service{
-        padding: 10px;
-    }
-    .homeservice-item-top {
-    
-        background-size: 80% 90%;
-        background-position: right center;
-        background-repeat: no-repeat;
-    }
-    .homeservice-name
-    {
-        font-size: 20px;
-    }
-    .home-service-item img{
-        min-height: 200px;
-        object-fit: cover;
-    }
-.homeservice-wrapper .grid
-{
-    padding: 0px;
-    margin: 0;
-}
-.homenews-item img{
-    min-height: 150px;
-    object-fit: cover;
-}
-.footer-end .footer-block
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #bdbcbc;
-}
-.f-title
-{
-    border: none;
-}
-.slidehome-content h2 {
-    font-size: 36px;
-    max-width: 350px;
-    letter-spacing: 1px;
-}
-.slidehome-content{
-    transform: translate(-50%, 30%);    
-}
-.btn-muangay
-{
-    padding: 10px 30px;
-}
-.cart
-{
-    float: right;
-}
-.search-mb
-{
-    float: right;
-    margin-right:5px;
-    font-size: 20px;
-    
-}
-.cartnumber{
-    top:-5px;
-}
-.frm-search-mb
-{
-    position: absolute;
-    top:40px;
-    display: none;
-    right:0px;
-   
-}
-#searchformtab input
-{
-    background-color: #FFF;
-}
-.closeX
-{
-    position: absolute;
-    top:-10px;
-    right: 0px;
-}
-.select_wrap
-{
-    max-width: 100%;
-}
-.default_option i
-{
-    color: #0039BA;
-}
 }
 
 /* Ipad pro */

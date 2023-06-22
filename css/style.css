@@ -2001,11 +2001,12 @@ background-size: auto;
   color: #FFF;
   max-width: 70%;
   padding: 10px 0px 0px;
-  opacity: 0;
+  
+  display: none;
 }
 .homeservice-item:nth-child(2) .homeservice-item--name
 {
-  opacity: 1;
+  display: -webkit-box; 
 }
 .homeproduct
 {
