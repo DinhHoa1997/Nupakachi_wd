@@ -314,7 +314,9 @@ a img {
 .header:hover{
   transition: all .5s ease-in-out;
   background: linear-gradient(180deg,#000 33.25%,transparent 83.64%);
+  padding-bottom: 30px;
 }
+
 
 header.header-fixed {
   position: fixed;
@@ -409,11 +411,12 @@ header.header-fixed {
   text-decoration: none;
   color: #FFF;
   display: inherit;
-  padding: 0px 20px;
+  padding: 0px 10px;
   
   font-size: 14px;
   font-family: var(--fontmain);
   font-weight: 600;
+  margin: 0px 10px;
   text-align: center;
   position: relative;
   text-transform: uppercase;
@@ -422,14 +425,38 @@ header.header-fixed {
 .nav>li>a:hover{
   color:#FFF;
 }
-.nav>li:hover>a::before{
-  width: 90%;
+.nav>li>a::before
+{
+  content: "";
+  width: 0px;
+  left: 50%;
+  height: 1px;
+  background-color: #FFF;
+  position: absolute;
+  transform: translate(-50%, 0px);
+  bottom: 10px;
+  transition: all .5s ease-in;
+}
+.nav>li>a::after
+{
+  content: "";
+  width: 0px;
+  left: 50%;
+  height: 1px;
+  background-color: #FFF;
+  position: absolute;
+  transform: translate(-50%, 0px);
+  top: 10px;
+  transition: all .5s ease-in;
+}
+.nav>li:hover>a::before,.nav>li:hover>a::after{
+  width: 100%;
  
 }
-.nav>li.active>a::before{
+/* .nav>li.active>a::before, .nav>li.active>a::after{
   width: 90%;
   
-}
+} */
 .nav>li.active a
 {
 	 color:#FFF;
@@ -451,7 +478,7 @@ header.header-fixed {
   z-index: 9;
   display: none;
   font-weight: normal;
-  background: #FFF;
+  background: #dddddd8c;
   text-transform: initial;
   border-radius: 5px;
   border-top: 3px solid var(--subcolor);
@@ -476,6 +503,7 @@ header.header-fixed {
   text-transform: initial;
   padding: 11px 10px;
   font-weight: 600;
+  transition: all .5s ease-in-out;
 
 }
 
@@ -1588,6 +1616,19 @@ max-width: 200px;
   color: #FFF;
   transition: all .5s ease-in;
   text-transform: uppercase;
+  position: relative;
+  padding: 10px;
+}
+.menuboxfooter a::before{
+  content: "";
+  width: 0px;
+  left: 50%;
+  transform: translate(-50%, 0px);
+  bottom: 5px;
+  background-color: #FFF;
+  height: 1px;
+  position: absolute;
+  transition: all .5s ease;
 }
 .footer-title {
   font-size: 17px;
@@ -1596,8 +1637,8 @@ max-width: 200px;
   padding-bottom: 10px;
   text-transform: uppercase;
 }
-.menuboxfooter a:hover{
-  color: var(--subcolor);
+.menuboxfooter li:hover a::before{
+ width: 75%;
 }
 .footer-copyright {
   color: #fff;
